@@ -43,20 +43,7 @@ exports.updateProduct = async(req, res) => {
 
     res.json({ message: 'Product updated successfully', id: productId });
   
-  // if (typeof price === 'number' && !isNaN(price)){
-  //   pool.query('UPDATE products SET  price = ? WHERE id = ?', [ price, productId], (error) => {
-  //     if (error) throw error;
-  //     res.json({ message: 'Product updated successfully', id: productId });
-  //   });
-  // }
-  // if (!description || description.trim() === ''){
-  //   pool.query('UPDATE products SET  description = ? WHERE id = ?', [description, productId], (error) => {
-  //     if (error) throw error;
-  //     res.json({ message: 'Product updated successfully', id: productId });
-  //   });
-  // }
   
-};
 
 exports.deleteProduct = (req, res) => {
   const productId = req.params.id;
